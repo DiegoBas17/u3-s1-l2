@@ -15,7 +15,7 @@ function MyNav() {
             <Nav.Link href="#link">About</Nav.Link>
             <Nav.Link href="#link">Browse</Nav.Link>
             <NavDropdown title="Categoria" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1" >Fantasy</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">Fantasy</NavDropdown.Item>
               {<NavDropdown.Divider />}
               <NavDropdown.Item href="#action/3.2">
                 History

@@ -1,13 +1,14 @@
 import { Component } from "react";
+import { Container } from "react-bootstrap";
 
 
 class MyFooter extends Component {
     render() {
         return (
 <footer>
-    <container className="d-flex justify-content-center">
+    <Container className="d-flex justify-content-center">
 <p>EpiBook from Diego Basili</p>
-    </container>
+    </Container>
 </footer>
         )
     }

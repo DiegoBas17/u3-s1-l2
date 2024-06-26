@@ -1,9 +1,11 @@
 import { Component } from "react";
+import { Container } from "react-bootstrap";
 import Alert from 'react-bootstrap/Alert';
 
 class Welcome extends Component {
     render() {
         return (
+          <Container className="mt-4">
 <Alert variant="success">
       <Alert.Heading>Hey, Benvenuto in EpiBooks</Alert.Heading>
       <p>
@@ -17,6 +19,7 @@ class Welcome extends Component {
         nice and tidy.
       </p>
     </Alert>
+    </Container>
         )
 }
 }

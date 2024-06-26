@@ -1,9 +1,10 @@
 import { Component } from "react";
 import "./App.css";
-import AllTheBooks from "./component/AllTheBooks";
+/* import AllTheBooks from "./component/AllTheBooks"; */
 import MyFooter from "./component/MyFooter";
 import MyNav from "./component/MyNav";
 import Welcome from "./component/Welcome";
+import BookList from "./component/BookList";
 
 class App extends Component {
   render() {
@@ -11,7 +12,8 @@ class App extends Component {
     <div className="App">
       <MyNav />
       <Welcome />
-      <AllTheBooks />
+      {/* <AllTheBooks /> */}
+      <BookList />
       <MyFooter />
     </div>
   );

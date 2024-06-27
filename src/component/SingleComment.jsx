@@ -1,14 +1,17 @@
 import { Component } from "react";
-import { Alert } from "react-bootstrap";
+import { Alert, Badge } from "react-bootstrap";
 
 class SingleComment extends Component {
   render() {
     return (
       <Alert variant="success">
         <Alert.Heading>{this.props.oggettoCommenti.comment}</Alert.Heading>
-        <p>{this.props.oggettoCommenti.rate}</p>
-        <hr />
-        <p className="mb-0">{this.props.oggettoCommenti.elementId}</p>
+        <span className="mb-0 d-inline">
+          {this.props.oggettoCommenti.elementId}
+        </span>
+        <Badge className="d-inline ms-auto">
+          {this.props.oggettoCommenti.rate}
+        </Badge>
       </Alert>
     );
   }

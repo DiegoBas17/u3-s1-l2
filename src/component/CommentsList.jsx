@@ -9,8 +9,14 @@ class CommentsList extends Component {
           .filter(
             (arrayCommenti) => arrayCommenti.elementId === this.props.idLibro
           )
-          .map((commentoLibro) => {
-            return <SingleComment oggettoCommenti={commentoLibro} />;
+          .map((commentoLibro, index) => {
+            return (
+              <SingleComment
+                oggettoCommenti={commentoLibro}
+                index={index}
+                key={index}
+              />
+            );
           })}
       </>
     );

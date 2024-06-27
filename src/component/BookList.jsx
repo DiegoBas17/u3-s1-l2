@@ -69,10 +69,23 @@ class BookList extends Component {
           Scifi
         </Button>
         <Row className="g-2">
-          {this.state.searchInput ? this.state.libriDaVisualizzare.filter(libro => libro.title.toLowerCase().includes(this.state.searchInput.toLowerCase())).map((libro) => {
-            return <SingleBook libriDaVisualizzare={libro} />;
-          }) : this.state.libriDaVisualizzare.map((libro) => {
-            return <SingleBook libriDaVisualizzare={libro} />;})}
+          {this.state.searchInput
+            ? this.state.libriDaVisualizzare
+                .filter((libro) =>
+                  libro.title
+                    .toLowerCase()
+                    .includes(this.state.searchInput.toLowerCase())
+                )
+                .map((libro) => {
+                  return (
+                    <SingleBook libriDaVisualizzare={libro} key={libro.asin} />
+                  );
+                })
+            : this.state.libriDaVisualizzare.map((libro) => {
+                return (
+                  <SingleBook libriDaVisualizzare={libro} key={libro.asin} />
+                );
+              })}
         </Row>
       </Container>
     );

@@ -9,7 +9,7 @@ import BookList from "./component/BookList";
 class App extends Component {
   render() {
   return (
-    <div className="App">
+    <div>
       <MyNav />
       <Welcome />
       {/* <AllTheBooks /> */}

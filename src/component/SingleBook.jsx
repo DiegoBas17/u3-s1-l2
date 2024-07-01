@@ -13,11 +13,12 @@ class SingleBook extends Component {
 
   render() {
     return (
-      <Col sx="12" sm="6" md="4" lg="3" xxl="2">
+      <Col sx="12" sm="6" md="3">
         <Card
-          onClick={this.cardSelezionata}
           style={{
-            border: this.state.selected ? "5px solid blue" : "none ",
+            border: this.state.selected
+              ? "5px solid red"
+              : "5px solid lightgrey",
             height: "600px",
             cursor: "pointer",
             borderRadius: "15px",
@@ -27,6 +28,7 @@ class SingleBook extends Component {
           <Card.Img
             variant="top"
             src={this.props.libriDaVisualizzare.img}
+            onClick={this.cardSelezionata}
             style={{ width: "100%", height: "360px", objectFit: "cover" }}
           />
           <Card.Body>
